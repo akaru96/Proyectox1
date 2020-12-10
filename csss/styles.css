@@ -1,0 +1,120 @@
+.header {
+  background-color: #03506f;
+}
+
+.card-panel {
+  border: #bbbbbb solid 2px;
+  border-radius: 10px;
+}
+
+.card-principal {
+  height: 375px;
+}
+
+body {
+  background-color: #f5f4f6;
+}
+
+.header-icon {
+  font-size: 35px;
+  vertical-align: middle;
+}
+
+.icon {
+  color: #03506f;
+  font-size: 35px;
+  vertical-align: bottom;
+}
+
+.select-dropdown {
+  color: #03506f;
+}
+
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: 1px solid #03506f;
+}
+
+ul.dropdown-content.select-dropdown li span {
+  color: #03506f;
+}
+
+ul.autocomplete-content.dropdown-content li span {
+  color: #03506f;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.input-field {
+  padding: 12px;
+}
+
+.text-center {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #03506f;
+}
+
+.btn:hover {
+  background-color: #0478a5;
+}
+
+.btn:focus {
+  background-color: #0478a5;
+}
+
+.chart-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-chart {
+  height: 650px;
+}
+
+.card-chart-extend {
+  height: 2500px;
+}
+
+.card-indicator {
+  font-size: 18px;
+}
+
+#dur {
+  width: 100%;
+  height: 500px;
+}
+
+#res {
+  width: 100%;
+  height: 500px;
+}
+
+#reswc {
+    width: 100%;
+    height: 500px;
+  }
+  
+
+#lswc {
+  width: 100%;
+  height: 500px;
+}
+
+#respr {
+  width: 100%;
+  height: 500px;
+}
+#resir {
+  width: 100%;
+  height: 500px;
+}
+#lsa {
+  width: 100%;
+  height: 500px;
+}

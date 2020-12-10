@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/material.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="csss/styles.css">
+  <link rel="shortcut icon" href="images/icon.png" type="image/png">
+  <title>Ramvs Jurimetrics</title>
+</head>
+
+<body>
+  <nav class="header">
+    <div class="nav-wrapper container p5">
+      <a href="#" class="brand-logo"><img style="vertical-align: text-bottom;" src="images/Ramvs Jurimetrics Logo.png"
+          alt="Ramvs Jurimetrics Logo"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><span class="material-icons header-icon">home</span></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h4><span class="material-icons icon">search</span>Busqueda</h4>
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel card-principal">
+          <form id="form" autocomplete="off" action="#" method="GET">
+            <div class="col s4">
+              <div class="section input-field col s11">
+                <p class="card-title">Especialidad</p>
+                <select id="speciality">
+                  <option value="" disabled selected>Seleccionar</option>
+                  <option value="1">Laboral</option>
+                </select>
+              </div>
+              <div class="section input-field col s11">
+                <p class="card-title">Instancia</p>
+                <select multiple>
+                  <option value="" disabled>Seleccionar</option>
+                  <option value="1">Primera instancia</option>
+                  <option value="2">Segunda instancia</option>
+                  <option value="3">Corte suprema</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col s4">
+              <div class="section input-field col s11">
+                <p class="card-title">Caso</p>
+                <select id="selectCase">
+                  <option value="" disabled selected>Seleccionar</option>
+                  <option value="1">Despido incausado</option>
+                  <option value="2">Despido injustificado</option>
+                  <option value="3">Despido nulo</option>
+                  <option value="4">Despido fraudulento</option>
+                  <option value="5">Pago de beneficios sociales</option>
+                </select>
+              </div>
+              <div class="section input-field col s11">
+                <p class="card-title">Juzgado</p>
+                <input autocomplete="off" type="text" id="autocomplete-input" class="autocomplete">
+                <label for="autocomplete-input"></label>
+              </div>
+            </div>
+
+            <div class="col s4">
+              <div class="section input-field col s11">
+                <p class="card-title">Palabras Clave</p>
+                <select multiple>
+                  <option value="" disabled>Seleccionar</option>
+                  <option value="1">CTS</option>
+                  <option value="2">Seguridad Social</option>
+                  <option value="3">Vacaciones</option>
+                </select>
+              </div>
+              <div class="section col s11 text-center">
+                <button class="btn btn-large" type="submit">Buscar
+                  <i class="material-icons right">search</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="charts" style="display: none;">
+      <h4><span class="material-icons icon">insert_chart</span>Métricas</h4>
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel card-chart">
+            <p class="chart-title">Resoluciones:</p>
+            <div id="res"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel card-chart">
+            <p class="chart-title">Duración de los casos:</p>
+            <div id="dur"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel card-chart-extend">
+            <div class="section">
+              <p class="chart-title">Resolución de casos cuando no hay contrato:</p>
+              <div id="reswc"></div>
+            </div>
+
+            <div class="section">
+              <p class="chart-title">Estrategias legales de la parte cuando no hay contrato:</p>
+              <div id="lswc"></div>
+            </div>
+
+            <div class="section">
+              <p class="chart-title">Resoluciones usando primacia de la realidad:</p>
+              <div id="respr"></div>
+            </div>
+
+            <div class="section">
+              <p class="chart-title">Resoluciones usando irrenunciabilidad de derechos:</p>
+              <div id="resir"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel card-chart">
+              <p class="chart-title">Estrategias legales de la contraparte:</p>
+              <div id="lsa"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
